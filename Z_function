@@ -1,0 +1,48 @@
+/// SUBSTR-spoj
+#include<bits/stdc++.h>
+using namespace std;
+
+const int N = 2e6 + 4;
+string A, B, S;
+int n, Z[N];
+
+void sol() {
+	int L = 1, R = 1;
+	Z[1] = (int) B.length();
+
+	for (int i = 2; i <= n; ++i) {
+		if (i > R) {
+			L = R = i;
+			while (R <= n && S[R] == S[R-L+1]) ++R; --R;
+			Z[i] = R-L+1;
+		}	
+		else {
+			int k = i - L + 1;
+			if (Z[k] < R - i + 1) Z[i] = Z[k];
+			else {
+				L = i;
+				while (R <= n && S[R] == S[R-L+1]) ++R; --R;
+				Z[i] = R-L+1;
+			}
+		}
+	}
+
+	for (int i = (int) B.length()+2; i <= n; ++i) {
+		if (Z[i] == (int) B.length()) cout << i - B.length() - 1 << ' ';
+	}	
+	cout << '\n';
+}
+
+int main() {
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	freopen("input.txt", "r", stdin);
+
+	cin >> A >> B;
+
+	S = " " + B + "#" + A;
+	n = (int) S.length() - 1;
+
+	sol();
+
+	return 0;
+}
