@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginSite</title>
+    <link rel="stylesheet" href="loginSite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="loginSite.js" defer></script>
+</head>
+<body>
+    <div class = "container">
+        <div class = "loginForm">
+            <h1>Đăng nhập tài khoản freemanga</h1>
+            <div class = "content">
+                <div class = "image">
+                    <img src="./resource/moPhat.jpg">
+                </div>
+    
+                <form action='https://www.youtube.com/' id = "formLogin">
+                    <div class = "usernameBlock">
+                        <i class="fas fa-user"></i>
+                        <input type = "text" id = "username" name = "username" placeholder = "Tài khoản">
+                    </div>
+                    <div class = "passwordBlock">
+                        <i class="fas fa-lock"></i>
+                        <input type = "password" id = "password" name = "password" placeholder = "Mật khẩu">
+                    </div>
+                    <div>
+                        <input type = "checkbox" id = "passwordRemember">
+                        <label for = "passwordRemember"> Ghi nhớ mật khẩu </label>
+                    </div>
+                    <div class = "WrongAccount">
+                        <p style="color:red">Sai thông tin tài khoản</p>
+                    </div>
+                    <!-- <input type = "submit" id = "loginButton" value = "LOGIN"> 
+                    <input type = "submit" id = "signupButton" value = "SIGN UP"> -->
+                    <!-- <button id = "loginButton" value = "LOGIN">  </button> -->
+                    <div class = "buttonBox">
+                        <a id = loginButton href = "#"> LOGIN </a>
+                        <a id = loginButton href = "https://www.youtube.com/"> SIGN UP </a>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
