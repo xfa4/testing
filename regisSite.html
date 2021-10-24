@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DinhQuocTrung_19020025</title>
+    <link rel="stylesheet" type="text/css" href="lab3.css"/>
+</head><body>
+
+    <form id="usr-form" action="#" method="post">
+        <div>
+            <label class="myForm">Họ tên:</label>
+            <input type="text" id="name" name="fullname" placeholder="Nguyễn Văn A" class="requiredField"/>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Địa chỉ:</label>
+            <input type="text" id="address" placeholder="Thanh Xuân Hà Nội" name="address"/>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Giới tính:</label>
+            
+            <label>
+                <input type="radio" id="male" name="sex" checked="checked"/> Nam
+            </label>
+
+            <label>
+                <input type="radio" id="female" name="sex"/> Nữ
+            </label>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy" class="requiredField"/>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">E-mail:</label>
+            <input type="text" id="email" name="email" class="requiredField" placeholder="abc@gmail.com">
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Điện thoại:</label>
+            <input type="text" id="phone" name="phone">
+            <br/>
+
+        </div>
+        <div>
+            <label class="myForm">Khóa đăng ký:</label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" id="english" name="english"> Tiếng Anh
+            </label>
+            
+            <label class="checkbox-container">
+                <input type="checkbox" id="management" name="management"> Quản trị
+            </label>
+
+            <label class="checkbox-container">
+                <input type="checkbox" id="it" name="it"/> CNTT
+            </label>
+            <br/>
+        
+        </div>
+        <div>
+            <label class="myForm">Tên sử dụng:</label>
+            <input type="text" id="username" name="username" class="requiredField">
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Mật khẩu:</label>
+            <input type="password" id="password" name="pass" class="requiredField">
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Gõ lại mật khẩu:</label>
+            <input type="password" id="repassword" name="repass" class="requiredField"/>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">Ghi chú:</label>
+            <textarea id="note" name="note"></textarea>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">&nbsp;</label>
+            <img class="preview nodisplay" src="" style="height:200px;"/>
+            <br/>
+        </div>
+        <div>
+            <label class="myForm">&nbsp;</label>
+            <input type="button" value="Chấp nhận"/>
+            <input type="button" value="Bỏ qua"/>
+            <br/>
+        </div>
+    </form>
+</body></html>
